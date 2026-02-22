@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社SPONVITAのコーポレートサイト">
+  <title>SPONVITA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          },
+          colors: {
+            navy: '#0f172a',
+            accent: '#2563eb',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-sans text-navy bg-slate-50 antialiased">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/70 backdrop-blur-md border-b border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-6 sm:px-8 h-16 flex items-center">
+      <a href="#" class="text-lg font-semibold tracking-tighter text-navy">SPONVITA</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center px-6 sm:px-8 pt-20 pb-28 relative overflow-hidden">
+      <!-- 右上の奥行き用グラデーション -->
+      <div class="absolute top-0 right-0 w-[min(90vw,720px)] aspect-square -translate-y-1/2 translate-x-1/3 rounded-full bg-navy/[0.06] blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="max-w-4xl mx-auto w-full relative">
+        <p class="text-xs sm:text-sm font-medium tracking-[0.2em] text-accent uppercase mb-5 sm:mb-6">
+          SPONTANEOUS LIFE
+        </p>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-navy mb-12 sm:mb-14">
+          SPONVITA
+        </h1>
+        <a
+          href="#origin"
+          class="inline-block px-8 py-3.5 text-sm font-medium text-white bg-navy rounded-sm hover:bg-slate-800 hover:-translate-y-1 transition-all duration-200"
+        >
+          詳細
+        </a>
+      </div>
+      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400">
+        <span class="text-xs tracking-widest uppercase">Scroll</span>
+        <span class="block w-px h-10 bg-gradient-to-b from-slate-400 to-transparent rounded-full animate-pulse" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <!-- Origin -->
+    <section id="origin" class="py-24 sm:py-32 px-6 sm:px-8 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-sm font-medium tracking-widest text-slate-400 uppercase mb-12">Origin</h2>
+        <p class="text-slate-700 leading-relaxed mb-8">
+          SPONVITAは、ラテン語の「sponte（自発的に）」と「vita（生命）」を組み合わせた造語です。
+          個々人が生き生きと生きれるように。企業が内発的に動けるように。その想いを込めています。
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 sm:py-32 px-6 sm:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-sm font-medium tracking-widest text-slate-400 uppercase mb-16">Services</h2>
+        <ul class="grid gap-6 sm:grid-cols-3">
+          <li class="border border-slate-200 rounded-xl p-6 sm:p-8 bg-white hover:border-slate-300 transition-colors">
+            <h3 class="text-base font-semibold text-navy mb-3">システム開発支援・技術コンサルティング</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">現場での実務経験に基づいた確かな技術力で、プロジェクトの成功を支援。単なる開発に留まらず、チームの内発的な動きを加速させる伴走型エンジニアリングを提供します。</p>
+          </li>
+          <li class="border border-slate-200 rounded-xl p-6 sm:p-8 bg-white hover:border-slate-300 transition-colors">
+            <h3 class="text-base font-semibold text-navy mb-3">自社プロダクト・EC事業</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">テクノロジーを通じて、日々の暮らしをより自発的で豊かなものに変えていく。自社プロダクトの企画・開発を現在進行形で進めています。</p>
+          </li>
+          <li class="border border-slate-200 rounded-xl p-6 sm:p-8 bg-white hover:border-slate-300 transition-colors">
+            <h3 class="text-base font-semibold text-navy mb-3">ヘルスケア・ウェルネス事業</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">ロジカルな思考と身体的アプローチの融合。心身の調和をサポートする新たなヘルスケアソリューションの創出に向けて、研究と準備を重ねています。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Company -->
+    <section id="company" class="py-24 sm:py-32 px-6 sm:px-8 bg-navy text-white">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-sm font-medium tracking-widest text-slate-400 uppercase mb-12">Company</h2>
+        <dl class="space-y-8">
+          <div>
+            <dt class="text-xs font-medium tracking-wider text-slate-400 uppercase mb-1">会社名</dt>
+            <dd class="text-white">株式会社SPONVITA</dd>
+          </div>
+          <div>
+            <dt class="text-xs font-medium tracking-wider text-slate-400 uppercase mb-1">設立</dt>
+            <dd class="text-white">2026年2月</dd>
+          </div>
+          <div>
+            <dt class="text-xs font-medium tracking-wider text-slate-400 uppercase mb-1">所在地</dt>
+            <dd class="text-white">〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷道玄坂東急ビル2F−C</dd>
+          </div>
+          <div>
+            <dt class="text-xs font-medium tracking-wider text-slate-400 uppercase mb-1">事業内容</dt>
+            <dd class="text-white">システム開発支援・技術コンサルティング・ヘルスケア事業 他</dd>
+          </div>
+          <div>
+            <dt class="text-xs font-medium tracking-wider text-slate-400 uppercase mb-1">連絡先</dt>
+            <dd>
+              <a href="mailto:info@sponvita.co.jp" class="text-white underline hover:no-underline transition-[text-decoration]">
+                info@sponvita.co.jp
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-12 px-6 sm:px-8 border-t border-slate-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-slate-500">© 2026 SPONVITA Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
